@@ -22,7 +22,7 @@ body {
     }
 }
 
-#frame #sidepanel {
+#sidepanel {
     float: left;
     min-width: 280px;
     max-width: 340px;
@@ -32,6 +32,7 @@ body {
     color: #000;
     overflow: hidden;
     position: relative;
+    border: 2px solid #0066B3;
 }
 
 @media screen and (max-width: 735px) {
@@ -41,14 +42,14 @@ body {
     }
 }
 
-#frame #sidepanel #profile {
+#profile {
     width: 80%;
     max-height: 35px;
     margin: 10px 15px 15px 20px;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile {
+    #profile {
         width: 100%;
         margin: 0 auto;
         padding: 5px 0 0 0;
@@ -56,16 +57,16 @@ body {
     }
 }
 
-#frame #sidepanel #profile.expanded .wrap {
+#profile.expanded .wrap {
     height: 210px;
     line-height: initial;
 }
 
-#frame #sidepanel #profile.expanded .wrap p {
+#profile.expanded .wrap p {
     margin-top: 20px;
 }
 
-#frame #sidepanel #profile .wrap {
+#profile .wrap {
     height: 60px;
     line-height: 60px;
     overflow: hidden;
@@ -76,12 +77,12 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap {
+    #profile .wrap {
         height: 55px;
     }
 }
 
-#frame #sidepanel #profile .wrap img {
+#profile .wrap img {
     width: 50px;
     border-radius: 50%;
     padding: 3px;
@@ -96,7 +97,7 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap img {
+    #profile .wrap img {
         width: 40px;
         margin-left: 4px;
     }
@@ -106,34 +107,34 @@ body {
     color: #FFF;
 }
 
-#frame #sidepanel #profile .wrap img.online {
+#profile .wrap img.online {
     border: 2px solid #2ecc71;
 }
 
-#frame #sidepanel #profile .wrap img.away {
+#profile .wrap img.away {
     border: 2px solid #f1c40f;
 }
 
-#frame #sidepanel #profile .wrap img.busy {
+#profile .wrap img.busy {
     border: 2px solid #e74c3c;
 }
 
-#frame #sidepanel #profile .wrap img.offline {
+#profile .wrap img.offline {
     border: 2px solid #95a5a6;
 }
 
-#frame #sidepanel #profile .wrap p {
+#profile .wrap p {
     float: left;
     margin-left: 15px;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap p {
+    #profile .wrap p {
         display: none;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options {
+#profile .wrap #status-options {
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -154,25 +155,25 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options {
+    #profile .wrap #status-options {
         width: 58px;
         margin-top: 57px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options.active {
+#profile .wrap #status-options.active {
     opacity: 1;
     visibility: visible;
     margin: 75px 0 0 0;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options.active {
+    #profile .wrap #status-options.active {
         margin-top: 62px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options:before {
+#profile .wrap #status-options:before {
     content: '';
     position: absolute;
     width: 0;
@@ -184,33 +185,33 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options:before {
+    #profile .wrap #status-options:before {
         margin-left: 23px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options ul {
+#profile .wrap #status-options ul {
     overflow: hidden;
     border-radius: 6px;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li {
+#profile .wrap #status-options ul li {
     padding: 15px 0 30px 18px;
     display: block;
     cursor: pointer;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options ul li {
+    #profile .wrap #status-options ul li {
         padding: 15px 0 35px 22px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li:hover {
+#profile .wrap #status-options ul li:hover {
     background: #2480c1;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+#profile .wrap #status-options ul li span.status-circle {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -219,13 +220,13 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+    #profile .wrap #status-options ul li span.status-circle {
         width: 14px;
         height: 14px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+#profile .wrap #status-options ul li span.status-circle:before {
     content: '';
     position: absolute;
     width: 14px;
@@ -237,51 +238,51 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+    #profile .wrap #status-options ul li span.status-circle:before {
         height: 18px;
         width: 18px;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li p {
+#profile .wrap #status-options ul li p {
     padding-left: 12px;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #profile .wrap #status-options ul li p {
+    #profile .wrap #status-options ul li p {
         display: none;
     }
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {
+#profile .wrap #status-options ul li#status-online span.status-circle {
     background: #2ecc71;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {
+#profile .wrap #status-options ul li#status-online.active span.status-circle:before {
     border: 1px solid #2ecc71;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {
+#profile .wrap #status-options ul li#status-away span.status-circle {
     background: #f1c40f;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {
+#profile .wrap #status-options ul li#status-away.active span.status-circle:before {
     border: 1px solid #f1c40f;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {
+#profile .wrap #status-options ul li#status-busy span.status-circle {
     background: #e74c3c;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {
+#profile .wrap #status-options ul li#status-busy.active span.status-circle:before {
     border: 1px solid #e74c3c;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {
+#profile .wrap #status-options ul li#status-offline span.status-circle {
     background: #95a5a6;
 }
 
-#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {
+#profile .wrap #status-options ul li#status-offline.active span.status-circle:before {
     border: 1px solid #95a5a6;
 }
 
@@ -290,7 +291,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 90%;
+    width: 85%;
 }
 
 .inner-addon .glyphicon {
@@ -310,7 +311,7 @@ body {
     border-radius: 15px;
 }
 
-#frame #sidepanel #search {
+#search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,7 +319,7 @@ body {
     margin-bottom: 5px;
 }
 
-#frame #sidepanel #badge-count {
+#badge-count {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,36 +345,34 @@ body {
     color: #FFF;
 }
 
-#frame #sidepanel #contacts ul {
-    overflow-y: scroll;
+#contacts ul {
     overflow-x: hidden;
+    max-height: 460px;
     background-color: #f5f5f5;
-}
-
-#frame #sidepanel #contacts ul {
-    height: 435px;
+    overflow-y: auto;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts {
+    #contacts {
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    #frame #sidepanel #contacts::-webkit-scrollbar {
+    #contacts::-webkit-scrollbar {
         display: none;
     }
 }
 
-#frame #sidepanel #contacts::-webkit-scrollbar {
+#contacts::-webkit-scrollbar {
     width: 8px;
     background: #f5f5f5;
 }
 
-#frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+#contacts::-webkit-scrollbar-thumb {
     background-color: #CCCCCC;
 }
 
-#frame #sidepanel #contacts ul li.contact {
+#contacts ul li.contact {
     position: relative;
     padding: 10px 0 15px 0;
     font-size: 0.9em;
@@ -381,37 +380,37 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts ul li.contact {
-        padding: 6px 0 46px 8px;
+    #contacts ul li.contact {
+        padding: 6px 0 4px 8px;
     }
 }
 
-#frame #sidepanel #contacts ul li.contact:hover {
+#contacts ul li.contact:hover {
     background: #F4F5F5;
 }
 
-#frame #sidepanel #contacts ul li.contact.active {
-    background: #E9EBEB;
-    border-right: 5px solid #E9EBEB;
+#contacts ul li.contact.active {
+    background: #e0e2e2;
+    border-right: 1px solid #e0e2e2;
 }
 
-#frame #sidepanel #contacts ul li.contact.active span.contact-status {
+#contacts ul li.contact.active span.contact-status {
     border: 2px solid #FFF !important;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap {
-    width: 88%;
+#contacts ul li.contact .wrap {
+    width: 90%;
     margin: 0 auto;
     position: relative;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts ul li.contact .wrap {
+    #contacts ul li.contact .wrap {
         width: 100%;
     }
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap span {
+#contacts ul li.contact .wrap span {
     position: absolute;
     left: 0;
     margin: -2px 0 0 -2px;
@@ -422,19 +421,19 @@ body {
     background: #95a5a6;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap span.online {
+#contacts ul li.contact .wrap span.online {
     background: #2ecc71;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap span.away {
+#contacts ul li.contact .wrap span.away {
     background: #f1c40f;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap span.busy {
+#contacts ul li.contact .wrap span.busy {
     background: #e74c3c;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap img {
+#contacts ul li.contact .wrap img {
     width: 40px;
     border-radius: 50%;
     float: left;
@@ -442,26 +441,31 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts ul li.contact .wrap img {
+    #contacts ul li.contact .wrap img {
         margin-right: 0px;
     }
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap .meta {
+#contacts ul li.contact .wrap .meta {
     padding: 5px 0 0 0;
+    width: 80%;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #contacts ul li.contact .wrap .meta {
+    #contacts ul li.contact .wrap .meta {
         display: none;
     }
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+#contacts ul li.contact .wrap .meta .name {
     font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 160px;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+#contacts ul li.contact .wrap .meta .preview {
     margin: 5px 0 0 0;
     padding: 0 0 1px;
     font-weight: 400;
@@ -474,7 +478,7 @@ body {
     transition: 1s all ease;
 }
 
-#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {
+#contacts ul li.contact .wrap .meta .preview span {
     position: initial;
     border-radius: initial;
     background: none;
@@ -484,13 +488,36 @@ body {
     opacity: .5;
 }
 
-#frame #sidepanel #bottom-bar {
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact-time {
+    margin-top: 0.5em;
+}
+
+.message-last-day {
+    margin-bottom: 0.3em;
+    color: #938f8f;
+    font-size: 0.9em;
+}
+
+.message-count {
+    color: #F03933;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center
+}
+
+#bottom-bar {
     position: absolute;
     width: 100%;
     bottom: 0;
 }
 
-#frame #sidepanel #bottom-bar button {
+#bottom-bar button {
     float: left;
     border: none;
     width: 100%;
@@ -503,50 +530,50 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #bottom-bar button {
+    #bottom-bar button {
         float: none;
         width: 100%;
         padding: 15px 0;
     }
 }
 
-#frame #sidepanel #bottom-bar button:focus {
+#bottom-bar button:focus {
     outline: none;
 }
 
-#frame #sidepanel #bottom-bar button:nth-child(1) {
+#bottom-bar button:nth-child(1) {
     border-right: 1px solid #2c3e50;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #bottom-bar button:nth-child(1) {
+    #bottom-bar button:nth-child(1) {
         border-right: none;
         border-bottom: 1px solid #2c3e50;
     }
 }
 
-#frame #sidepanel #bottom-bar button:hover {
+#bottom-bar button:hover {
     background: #2480c1;
 }
 
-#frame #sidepanel #bottom-bar button i {
+#bottom-bar button i {
     margin-right: 3px;
     font-size: 1em;
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #bottom-bar button i {
+    #bottom-bar button i {
         font-size: 1.3em;
     }
 }
 
 @media screen and (max-width: 735px) {
-    #frame #sidepanel #bottom-bar button span {
+    #bottom-bar button span {
         display: none;
     }
 }
 
-#frame .content {
+.content {
     float: right;
     width: 50%;
     height: 100%;
@@ -555,7 +582,7 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame .content {
+    .content {
         width: calc(100% - 58px);
         min-width: 300px !important;
     }
@@ -570,8 +597,8 @@ body {
 #frame .content .contact-profile {
     width: 100%;
     height: 80px;
-    line-height: 60px;
-    background: #2480c1;
+    line-height: 50px;
+    background: #0066B3;
 }
 
 #frame .content .contact-profile img {
@@ -581,19 +608,12 @@ body {
     margin: 9px 12px 0 9px;
 }
 
-#frame .content .contact-profile p {
+.content .contact-profile p {
     float: left;
     color: #FFF;
 }
 
-
-/* #frame .content .contact-profile #search-message {
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-} */
-
-#frame .content .messages {
+.content .messages {
     height: auto;
     min-height: calc(100% - 110px);
     max-height: calc(100% - 110px);
@@ -602,21 +622,21 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame .content .messages {
+    .content .messages {
         max-height: calc(100% - 105px);
     }
 }
 
-#frame .content .messages::-webkit-scrollbar {
+.content .messages::-webkit-scrollbar {
     width: 8px;
     background: transparent;
 }
 
-#frame .content .messages::-webkit-scrollbar-thumb {
+.content .messages::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-#frame .content .messages ul li {
+.content .messages ul li {
     display: inline-block;
     clear: both;
     float: left;
@@ -625,37 +645,37 @@ body {
     font-size: 0.9em;
 }
 
-#frame .content .messages ul li:nth-last-child(1) {
+.content .messages ul li:nth-last-child(1) {
     margin-bottom: 20px;
 }
 
-#frame .content .messages ul li.sent img {
+.content .messages ul li.sent img {
     margin: 6px 8px 0 0;
 }
 
-#frame .content .messages ul li.sent p {
+.content .messages ul li.sent p {
     background: #DBDBDB;
     color: #000;
 }
 
-#frame .content .messages ul li.replies img {
+.content .messages ul li.replies img {
     float: right;
     margin: 6px 0 0 8px;
 }
 
-#frame .content .messages ul li.replies p {
+.content .messages ul li.replies p {
     background: #f5f5f5;
     color: #000;
     float: right;
 }
 
-#frame .content .messages ul li img {
+.content .messages ul li img {
     width: 22px;
     border-radius: 50%;
     float: left;
 }
 
-#frame .content .messages ul li p {
+.content .messages ul li p {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 20px;
@@ -664,23 +684,23 @@ body {
 }
 
 @media screen and (min-width: 735px) {
-    #frame .content .messages ul li p {
+    .content .messages ul li p {
         max-width: 300px;
     }
 }
 
-#frame .content .message-input {
+.content .message-input {
     position: absolute;
     bottom: 0;
     width: 100%;
     z-index: 99;
 }
 
-#frame .content .message-input .wrap {
+.content .message-input .wrap {
     position: relative;
 }
 
-#frame .content .message-input .wrap input {
+.content .message-input .wrap input {
     font-family: "proxima-nova", "Source Sans Pro", sans-serif;
     float: left;
     border: none;
@@ -696,11 +716,11 @@ body {
     }
 }
 
-#frame .content .message-input .wrap input:focus {
+.content .message-input .wrap input:focus {
     outline: none;
 }
 
-#frame .content .message-input .wrap .attachment {
+.content .message-input .wrap .attachment {
     position: absolute;
     right: 60px;
     z-index: 4;
@@ -712,17 +732,17 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame .content .message-input .wrap .attachment {
+    .content .message-input .wrap .attachment {
         margin-top: 17px;
         right: 65px;
     }
 }
 
-#frame .content .message-input .wrap .attachment:hover {
+.content .message-input .wrap .attachment:hover {
     opacity: 1;
 }
 
-#frame .content .message-input .wrap button {
+.content .message-input .wrap button {
     float: right;
     border: none;
     width: 50px;
@@ -733,15 +753,15 @@ body {
 }
 
 @media screen and (max-width: 735px) {
-    #frame .content .message-input .wrap button {
+    .content .message-input .wrap button {
         padding: 16px 0;
     }
 }
 
-#frame .content .message-input .wrap button:hover {
+.content .message-input .wrap button:hover {
     background: #2480c1;
 }
 
-#frame .content .message-input .wrap button:focus {
+.content .message-input .wrap button:focus {
     outline: none;
 }
